@@ -40,7 +40,7 @@ major_scales = [
 def scale_picker(scale_type):
     if scale_type in ['major', 'dur']:
         return random.choice(major_scales)
-    elif scale_type == ['minor', 'moll']:
-        return random.choice(major_scales)
+    elif scale_type in ['minor', 'moll']:
+        return random.choice(minor_scales)
     else:
         raise ValueError("Invalid scale type specified.")
